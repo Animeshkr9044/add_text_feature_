@@ -3,6 +3,7 @@
 
 
 def delete_embbeding_from_vectorstore(campain_id):
+    """This the function that take the campain_id as parameter and delete the embbedings """
     from pinecone import Pinecone
 
     client = Pinecone()
