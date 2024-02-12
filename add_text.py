@@ -4,6 +4,7 @@ from langchain.document_loaders import UnstructuredPDFLoader
 
 
 def add_embedding_to_vectordatabase(filepath,campain_id,namespace):
+    """this is the function that takes filepath of the pdf and campain_id and namespace to upload the vectorstore"""
     loader = UnstructuredPDFLoader(file_path=filepath)
     data = loader.load()
 
